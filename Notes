@@ -1,0 +1,13 @@
+Auth token Request 
+
+bob_client = f300cd7766394997ad05fe7032d9fef7
+bob_secrect = c6d3411b63794196a7bb971c073e3412
+
+curl --location 'https://api.tink.com/api/v1/oauth/token' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'client_id=f300cd7766394997ad05fe7032d9fef7' \
+--data-urlencode 'client_secret=c6d3411b63794196a7bb971c073e3412' \
+--data-urlencode 'grant_type=client_credentials' \
+--data-urlencode 'scope=payment:read,payment:write'
+
+
